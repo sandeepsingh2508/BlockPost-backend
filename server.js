@@ -1,7 +1,7 @@
 const app=require('./app')
 const dotenv=require('dotenv')
 const connectDatabase=require('./Config/DbConnect')
-dotenv.config({path:`Config/config.env`})
+dotenv.config()
 const port=process.env.PORT||5000
 
 connectDatabase();
